@@ -21,32 +21,32 @@ $h4-font-size: rem-calc(20);
 $h5-font-size: rem-calc(18);
 $h6-font-size: 1rem;
 
-$font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-$base-font-family: $font-family;
-$sans-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$sans-font-family-semibold: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$sans-font-family-light: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif-font-family: Georgia, Times, serif;
-
-// $font-family: "Freight Sans Pro Book", "Roboto", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+// $font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 // $base-font-family: $font-family;
-// $sans-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $sans-font-family-semibold: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $sans-font-family-light: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $serif-font-family: "Roboto Slab", Georgia, Times, serif;
+// $sans-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $sans-font-family-semibold: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $sans-font-family-light: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $serif-font-family: Georgia, Times, serif;
+
+$font-family: "Freight Sans Pro Book", "Roboto", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+$base-font-family: $font-family;
+$sans-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-font-family-semibold: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-font-family-light: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font-family: "Roboto Slab", Georgia, Times, serif;
 
 // $Brand Colors
-// $primary-color:     #ff2160;
-// $secondary-color:   #00c8e4;
-// $wash-color:        rgba(#003f65, .25);
-// $alert-color:       #ff2160;
-// $success-color:     #ff7054;
-// $space-color:       #003f65;
-// $deep-color:        #010b17;
+$primary-color:     #ff2160;
+$secondary-color:   #00c8e4;
+$wash-color:        rgba(#003f65, .25);
+$alert-color:       #ff2160;
+$success-color:     #ff7054;
+$space-color:       #003f65;
+$deep-color:        #010b17;
 
-$wash-color:        #efefef;
-$space-color:       #333;
-$deep-color:        #000;
+// $wash-color:        #efefef;
+// $space-color:       #333;
+// $deep-color:        #000;
 
 $row-width: rem-calc(1200);
 $header-color:      #000;
