@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Sass Error: File to import not found or unreadable: compass\\css3. \A        Load path: \\ \A         on line 49 of \\Users\\bucky\\Sites\\ministryofspace\\patterns\\assets\\scss\\app.scss \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 
