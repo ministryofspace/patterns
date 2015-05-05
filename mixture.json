@@ -2,7 +2,7 @@
   "convertHtml": {
     "relativePaths": true
   },
-  "debug": false,
+  "debug": true,
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
@@ -16,7 +16,21 @@
   "projectName": "patterns",
   "publishedId": null,
   "sass": {
-    "useLibSass": true
+    "useLibSass": false,
+    "outputStyle": "nested",
+    "sourceMap": true,
+    "lineNumbers": true,
+    "debugInfo": true
+  },
+  "autoPrefixer": {
+  "active": true,
+  "sourceMap": true,
+  "browsers": [
+    "last 1 version", 
+    "> 1%", 
+    "ie 8", 
+    "ie 7"
+  ]
   },
   "serverHostname": null,
   "serverPort": null,

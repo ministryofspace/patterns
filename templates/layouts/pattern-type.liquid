@@ -1,0 +1,20 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministry of Space</title>
+      {{ "assets/css/app.css" | asset_url | stylesheet_tag }}
+      <script src="{{ "modernizr.js" | asset_url }}"></script>
+      {% comment %}<link rel="stylesheet" href="http://basehold.it/24">{% endcomment %}
+  </head>
+  <body style="height: auto;">
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+      {% include "organisms/nav-patterns" %}
+      {% block content %}{% endblock %}
+      {% include "scripts" %}
+      </div>
+    </div> 
+  </body>
+</html>

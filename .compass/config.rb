@@ -17,7 +17,7 @@ images_dir = "assets/images" # update to the path of your image files.
 
 javascripts_dir = "assets/js" # update to the path of your script files.
 
-line_comments = false
+line_comments = true
 
 cache = true
 
