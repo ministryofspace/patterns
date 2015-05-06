@@ -1,7 +1,7 @@
 {% layout "patterns" %}
 {% block content %}
 
-  <section class="slat">
+<section class="slat">
   <div class="row">
     <div class="section-label">
       <div class="section-label_label">
@@ -10,5 +10,31 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="row">
+    <div class="large-12 large-centered columns">
+      <h5>Desktop Navigation</h5>
+    </div>
+  </div>
+</section>    
+{% include "organisms/nav" %}
+
+<section class="slat">
+  <div class="row">
+    <div class="large-4 large-centered columns">
+      <h5>Mobile Navigation</h5>
+      <nav class="tab-bar">
+        <section class="right-small">
+          <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+        </section>
+
+        <section class="middle tab-bar-section">
+          <h1 class="title">Ministry of Space</h1>
+        </section>
+      </nav>
+    </div>
+  </div>  
+</section>  
 
 {% endblock %}
