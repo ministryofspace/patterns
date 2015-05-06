@@ -1,29 +1,30 @@
 .bg-primary {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
 }
 
 .bg-secondary {
-  background-color: $secondary-color;
+  background-color: $secondary-color !important;
 }
 
 .bg-alert {
-  background-color: $alert-color;
+  background-color: $alert-color !important;
 }
 
 .bg-warning {
-  background-color: $warning-color;
+  background-color: $warning-color !important;
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: #fff !important;
+  color: #333 !important;
+
+  & code {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }  
 }
 
 .bg-black {
-  background-color: #000;
-}
-
-.bg-wash {
-  background-color: $primary-color;
+  background-color: #000 !important;
 }
 
 .bg-wash {
@@ -39,23 +40,27 @@
 }
 
 .bg-darken {
-  background-color: $space-color;
+  background-color: $space-color !important;
 
   #{h1, h2, h3, h4, h5, h6, p, a} {
     color: #fff;
   }
 }
 
-.bg-deep {
-  background: url(/assets/images/bg-space.jpg) $deep-color 0 0 no-repeat;
-  background-size: cover;
-  background-color: $deep-color;
-  color: #fff;
-
-  #{h1, h2, h3, h4, h5, h6, p, a} {
-    color: #fff;
-  }
+.bg-deep { 
+  background-color: $deep-color !important;
 }  
+
+// .bg-deep {
+//   background: url(/assets/images/bg-space.jpg) $deep-color 0 0 no-repeat;
+//   background-size: cover;
+//   background-color: $deep-color !important;
+//   color: #fff;
+
+//   #{h1, h2, h3, h4, h5, h6, p, a} {
+//     color: #fff;
+//   }
+// }  
 
 .t-bright {
   color: #fff;

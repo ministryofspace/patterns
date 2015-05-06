@@ -1,0 +1,27 @@
+.section-label {
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+
+  &_label {
+    background-color: #efefef;
+    padding: 1rem;
+    display: inline-block;
+  }
+}
+
+.color-tile {
+  width: 100%;
+  background: #eee;
+  color: #fff;
+  // text-shadow: $text-shadow;
+  // padding: ($base-spacing * 2) $base-spacing;
+  padding: 3rem 1.5rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+
+  & code {
+    background-color: transparent !important;
+    border: 0 !important;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
