@@ -24462,6 +24462,13 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* line 29, ../scss/layouts/_patterns.scss */
+.pattern-info {
+  background-color: #efefef;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
 @media only screen and (min-width: 64.063em) {
   /* line 4, ../scss/pages/_all.scss */
   .home-grid .clear-large {
