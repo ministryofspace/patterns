@@ -81,7 +81,7 @@ $text-sizing: (
   ),
   deci: (
     small: (
-      font-size: .79rem,
+      font-size: .625rem,
       line-height: 1.715
     ),
     // medium: (
@@ -95,7 +95,7 @@ $text-sizing: (
   ),
   base: (
     small: (
-      font-size: 1rem,
+      font-size: .725rem,
       line-height: 1.58
     ),
     // medium: (
@@ -254,6 +254,7 @@ h4,
 h5,
 .epsilon {
   @include responsive-text-size('base');
+  @include type-weight('light');
 }
 
 h6,

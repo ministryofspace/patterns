@@ -3,7 +3,7 @@
   border-bottom: 1px solid #efefef;
 
   &_label {
-    background-color: #efefef;
+    // background-color: #efefef;
     padding: 1rem;
     display: inline-block;
   }
@@ -28,6 +28,10 @@
 
 .pattern-info {
   background-color: #efefef;
-  padding: 1rem;
-  margin-top: 1.5rem;
+  padding: $medium-text-space $medium-text-space .5rem;
+  margin-top: $small-space;
+
+  @media #{$medium-up} {
+    margin-top: $medium-space;
+  }  
 }

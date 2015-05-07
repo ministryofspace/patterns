@@ -23986,6 +23986,41 @@ code {
   padding-top: 6.25rem;
 }
 
+/* line 1, ../scss/helpers/_type.scss */
+.serif {
+  font-family: "Roboto Slab", Georgia, Times, serif;
+}
+
+/* line 5, ../scss/helpers/_type.scss */
+.sans {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 21, ../scss/helpers/_type.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 25, ../scss/helpers/_type.scss */
+.semi {
+  font-weight: 500;
+}
+
+/* line 29, ../scss/helpers/_type.scss */
+.normal {
+  font-weight: 400;
+}
+
+/* line 33, ../scss/helpers/_type.scss */
+.light {
+  font-weight: 300;
+}
+
+/* line 37, ../scss/helpers/_type.scss */
+.caps {
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 40.063em) {
   /* line 9, ../scss/helpers/_alignment.scss */
   .hero-offset.center {
@@ -24460,6 +24495,13 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
   background-color: transparent !important;
   border: 0 !important;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 29, ../scss/layouts/_patterns.scss */
+.pattern-info {
+  background-color: #efefef;
+  padding: 1rem;
+  margin-top: 1.5rem;
 }
 
 @media only screen and (min-width: 64.063em) {
