@@ -24509,6 +24509,10 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
     margin-top: 3.125rem;
   }
 }
+/* line 38, ../scss/layouts/_patterns.scss */
+.pattern-info code {
+  background-color: #fff;
+}
 
 @media only screen and (min-width: 64.063em) {
   /* line 4, ../scss/pages/_all.scss */
