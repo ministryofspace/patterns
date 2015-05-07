@@ -16,7 +16,7 @@
   "projectName": "patterns",
   "publishedId": null,
   "sass": {
-    "useLibSass": false,
+    "useLibSass": true,
     "outputStyle": "nested",
     "sourceMap": true,
     "lineNumbers": true,
@@ -39,5 +39,5 @@
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": true
+  "useCompass": false
 }

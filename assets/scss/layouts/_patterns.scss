@@ -33,5 +33,9 @@
 
   @media #{$medium-up} {
     margin-top: $medium-space;
+  }
+
+  code {
+    background-color: #fff;
   }  
 }

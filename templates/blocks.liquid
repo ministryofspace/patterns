@@ -1,0 +1,84 @@
+{% layout "patterns" %}
+{% block content %}
+
+<section class="slat">
+  <div class="row">
+    <h2 class="text-center no-margin">Blocks</h2>
+  </div>
+</section>
+
+<hr class="no-margin">
+
+<section class="slat">
+  <div class="row">
+    <div class="pattern-info no-margin">
+      <div class="pattern-info_description">
+        <p><code class="bold">.block</code></p>
+        <p class="epsilon">Modular secondary content. Default variation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+  <div class="small-12 medium-6 large-4 columns">
+  {% include "molecules/block-type" %}
+  </div>
+
+  <div class="small-12 medium-6 large-8 columns">
+    <div class="code">
+    <xmp class="prettyprint lang-html sunburst">
+  <aside class="block">
+    <header class="block-header">
+      <h4 class="zeta t-caps">Feedback</h4>
+    </header>
+    <article class="block-article">
+      <h2>What was your favorite part of the show?</h2>
+    </article>
+    <footer class="block-footer">
+      <a href="#">join the dicussion</a>
+    </footer>
+  </aside>
+    </xmp>
+  </div>
+</div>
+</div>
+
+<section class="slat">
+  <div class="row">
+    <div class="pattern-info">
+      <div class="pattern-info_description">
+        <p><code class="bold">.block-photo</code></p>
+        <p class="epsilon">Photo background header and photo background content area</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+  {% include "molecules/block" %}
+
+  <div class="small-12 medium-6 large-8 columns">
+    <div class="code">
+    <xmp class="prettyprint lang-html sunburst">
+  <div class="block-photo item">
+    <figure class="block-photo-figure">
+      <img src="path/to/image">
+      <figcaption class="block"><h3>Exhibitons</h3></figcaption>
+    </figure>
+
+    <article class="block-type">
+      <figure class="block-photo-figure">
+        <img src="path/to/image">
+      </figure>
+      <header class="block block-type-header">
+        <h2>Apollo Landers on Display</h2>
+        <p><a href="">read more</a></p>
+      </header>
+    </article>
+  </div>
+    </xmp>
+  </div>
+</div>
+
+{% endblock %}
