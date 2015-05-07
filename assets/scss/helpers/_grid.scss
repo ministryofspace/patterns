@@ -1,19 +1,19 @@
 .slat {
-  padding: 3rem 0;
+  padding: $medium-space 0;
 
   @media #{$medium-up} {
-    padding: 4rem 3rem;
+    padding: $large-space $medium-space;
   }
 
   @media #{$large-up} {
-    padding: 3rem 0;
+    padding: $medium-space 0;
   }
 }
 
 .block {
-  padding: 1rem 1.5rem 3rem;
+  padding: $small-space $small-space $medium-space;
 
   &-footer {
-    margin-top: 1rem;
+    margin-top: $small-space;
   }
 }

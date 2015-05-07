@@ -3,7 +3,7 @@
   border-bottom: 1px solid #efefef;
 
   &_label {
-    background-color: #efefef;
+    // background-color: #efefef;
     padding: 1rem;
     display: inline-block;
   }
@@ -24,4 +24,14 @@
     border: 0 !important;
     color: rgba(255, 255, 255, 0.7);
   }
+}
+
+.pattern-info {
+  background-color: #efefef;
+  padding: $medium-text-space $medium-text-space .5rem;
+  margin-top: $small-space;
+
+  @media #{$medium-up} {
+    margin-top: $medium-space;
+  }  
 }

@@ -1,0 +1,43 @@
+.serif {
+  font-family:$serif-font-family;
+}
+
+.sans {
+  font-family:$sans-font-family;
+}
+
+.large {
+//    @include type-scale(large);
+}
+
+.medium {
+//    @include type-scale(medium);
+}
+
+.base {
+//   @include type-scale(base);
+}
+
+.bold {
+   @include type-weight(bold);
+}
+
+.semi {
+   @include type-weight(semi);
+}
+
+.normal {
+  @include type-weight(regular);
+}
+
+.light {
+  @include type-weight(light);
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.small {
+//  @include type-scale(tiny);
+}

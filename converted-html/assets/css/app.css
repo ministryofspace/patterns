@@ -23701,8 +23701,9 @@ h4,
 /* line 254, ../scss/base/_typography.scss */
 h5,
 .epsilon {
-  font-size: 1rem;
+  font-size: 0.725rem;
   line-height: 1.58;
+  font-weight: 300;
 }
 @media screen and (min-width: 64em) {
   /* line 254, ../scss/base/_typography.scss */
@@ -23713,14 +23714,14 @@ h5,
   }
 }
 
-/* line 259, ../scss/base/_typography.scss */
+/* line 260, ../scss/base/_typography.scss */
 h6,
 .zeta {
-  font-size: 0.79rem;
+  font-size: 0.625rem;
   line-height: 1.715;
 }
 @media screen and (min-width: 64em) {
-  /* line 259, ../scss/base/_typography.scss */
+  /* line 260, ../scss/base/_typography.scss */
   h6,
   .zeta {
     font-size: 0.79rem;
@@ -23728,7 +23729,7 @@ h6,
   }
 }
 
-/* line 264, ../scss/base/_typography.scss */
+/* line 265, ../scss/base/_typography.scss */
 p {
   font-size: 0.79rem;
   line-height: 1.5;
@@ -23737,71 +23738,71 @@ p {
   margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 64em) {
-  /* line 264, ../scss/base/_typography.scss */
+  /* line 265, ../scss/base/_typography.scss */
   p {
     font-size: 1.266rem;
     line-height: 1.5;
   }
 }
 
-/* line 271, ../scss/base/_typography.scss */
+/* line 272, ../scss/base/_typography.scss */
 a {
   text-decoration: none;
 }
 
-/* line 275, ../scss/base/_typography.scss */
+/* line 276, ../scss/base/_typography.scss */
 .omega {
   font-size: 0.6875rem;
   line-height: 1.5;
 }
 @media screen and (min-width: 64em) {
-  /* line 275, ../scss/base/_typography.scss */
+  /* line 276, ../scss/base/_typography.scss */
   .omega {
     font-size: 0.6875rem;
     line-height: 1.5;
   }
 }
 
-/* line 279, ../scss/base/_typography.scss */
+/* line 280, ../scss/base/_typography.scss */
 ul, ol, dl {
   margin: 0;
   padding: 0;
 }
-/* line 283, ../scss/base/_typography.scss */
+/* line 284, ../scss/base/_typography.scss */
 ul li, ol li, dl li {
   margin: 0;
   padding: 0;
 }
 
-/* line 289, ../scss/base/_typography.scss */
+/* line 290, ../scss/base/_typography.scss */
 ul, ul li ul {
   list-style: none;
   margin: 0;
 }
 
-/* line 294, ../scss/base/_typography.scss */
+/* line 295, ../scss/base/_typography.scss */
 dl dt, dl dd {
   margin: 0;
 }
 
-/* line 298, ../scss/base/_typography.scss */
+/* line 299, ../scss/base/_typography.scss */
 code {
   font-family: "Roboto Slab", Georgia, Times, serif;
 }
 
-/* line 302, ../scss/base/_typography.scss */
+/* line 303, ../scss/base/_typography.scss */
 .serif {
   font-family: "Roboto Slab", Georgia, Times, serif;
 }
 
-/* line 306, ../scss/base/_typography.scss */
+/* line 307, ../scss/base/_typography.scss */
 .t-spaced {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: .35rem;
 }
 
-/* line 312, ../scss/base/_typography.scss */
+/* line 313, ../scss/base/_typography.scss */
 .t-caps {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -23986,6 +23987,41 @@ code {
   padding-top: 6.25rem;
 }
 
+/* line 1, ../scss/helpers/_type.scss */
+.serif {
+  font-family: "Roboto Slab", Georgia, Times, serif;
+}
+
+/* line 5, ../scss/helpers/_type.scss */
+.sans {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 21, ../scss/helpers/_type.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 25, ../scss/helpers/_type.scss */
+.semi {
+  font-weight: 500;
+}
+
+/* line 29, ../scss/helpers/_type.scss */
+.normal {
+  font-weight: 400;
+}
+
+/* line 33, ../scss/helpers/_type.scss */
+.light {
+  font-weight: 300;
+}
+
+/* line 37, ../scss/helpers/_type.scss */
+.caps {
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 40.063em) {
   /* line 9, ../scss/helpers/_alignment.scss */
   .hero-offset.center {
@@ -24087,28 +24123,28 @@ figure {
 
 /* line 1, ../scss/helpers/_grid.scss */
 .slat {
-  padding: 3rem 0;
+  padding: 3.125rem 0;
 }
 @media only screen and (min-width: 40.063em) {
   /* line 1, ../scss/helpers/_grid.scss */
   .slat {
-    padding: 4rem 3rem;
+    padding: 3.75rem 3.125rem;
   }
 }
 @media only screen and (min-width: 64.063em) {
   /* line 1, ../scss/helpers/_grid.scss */
   .slat {
-    padding: 3rem 0;
+    padding: 3.125rem 0;
   }
 }
 
 /* line 13, ../scss/helpers/_grid.scss */
 .block {
-  padding: 1rem 1.5rem 3rem;
+  padding: 1.25rem 1.25rem 3.125rem;
 }
 /* line 16, ../scss/helpers/_grid.scss */
 .block-footer {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
 /* desert scheme ported from vim to google prettify */
@@ -24441,7 +24477,6 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
 }
 /* line 5, ../scss/layouts/_patterns.scss */
 .section-label_label {
-  background-color: #efefef;
   padding: 1rem;
   display: inline-block;
 }
@@ -24460,6 +24495,19 @@ li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
   background-color: transparent !important;
   border: 0 !important;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 29, ../scss/layouts/_patterns.scss */
+.pattern-info {
+  background-color: #efefef;
+  padding: 2.1875rem 2.1875rem 0.5rem;
+  margin-top: 1.25rem;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 29, ../scss/layouts/_patterns.scss */
+  .pattern-info {
+    margin-top: 3.125rem;
+  }
 }
 
 @media only screen and (min-width: 64.063em) {
