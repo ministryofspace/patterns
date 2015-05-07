@@ -1,3 +1,4 @@
+// Background color helper classes
 .bg-primary {
   background-color: $primary-color !important;
 }
@@ -62,10 +63,7 @@
 //   }
 // }  
 
-.t-bright {
-  color: #fff;
-}
-
+// Pattern library object
 .pattern-swatch {
   padding: 100% 0 0 0;
   

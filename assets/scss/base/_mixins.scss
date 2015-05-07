@@ -1,47 +1,4 @@
-#{h1, h2, h3, h4, h5, h6} {
-
-}
-
-// font-family: 'DIN Next Pro Light'
-// font-family: 'DIN Next Pro Regular'
-// font-family: 'DIN Next Std Cyrillic Medium'
-// font-family: 'DIN Next Slab Light'
-// font-family: 'Freight Sans Pro Book'
-
-// .alpha {
-//   font-size: $h1-font-size;
-// }
-
-// .beta {
-//   font-size: $h2-font-size;
-// }
-
-// .gamma {
-//   font-size: $h3-font-size;
-// }
-
-// .delta {
-//   font-size: $h4-font-size;
-// }
-
-// .epsilon {
-//   font-size: $h5-font-size;
-// }
-
-// .zeta {
-//   font-size: $h6-font-size;
-// }
-
-.t-caps {
-  text-transform: uppercase;
-}
-
-
-// ----
-// Sass (v3.4.7)
-// ----
-
-// config/_breakpoints.scss
+// config/_type-breakpoints.scss
 $breakpoints: (
   small:    $small-top,
   medium:   $small-top,
@@ -49,19 +6,14 @@ $breakpoints: (
   x-large:  $large-top
 );
 
+// config/_type-weight.scss
 $type-weight: (
-    thin: 200,
-    light: 300,
-    regular: 400,
-    semi: 500,
-    bold: 700
+  thin:     200,
+  light:    300,
+  regular:  400,
+  semi:     500,
+  bold:     700
 );
-
-// A simple type-weight mixin
-// ex. @include type-weight(strong);
-@mixin type-weight($weight) {
-  font-weight: map-get($type-weight, $weight);
-}
 
 // config/_typography.scss
 $text-sizing: (
@@ -165,12 +117,12 @@ $text-sizing: (
   )
 );
 
-// lib/functions/_responsive.scss
+// functions/_type-breakpoints.scss
 @function breakpoint($breakpoint-name) {
   @return map-get($breakpoints, $breakpoint-name);
 }
 
-// lib/functions/_typography.scss
+// functions/_typography.scss
 @function text-breakpoints-for($text-size) {
   @return map-get($text-sizing, $text-size);
 }
@@ -180,7 +132,13 @@ $text-sizing: (
   @return map-get($text-breakpoints-map, $breakpoint-name);
 }
 
-// lib/mixins/_responsive.scss
+// A simple type-weight mixin
+// ex. @include type-weight(strong);
+@mixin type-weight($weight) {
+  font-weight: map-get($type-weight, $weight);
+}
+
+// mixins/_type-breakpoints.scss
 @mixin respond-above($breakpoint-name) {
   @media screen and (min-width: breakpoint($breakpoint-name)) {
     @content;
@@ -207,111 +165,4 @@ $text-sizing: (
       }
     }
   }
-}
-
-// _typography.scss
-
-body {
- font-family: $font-family; 
-}
-
-#{h1, h2, h3, h4, h5, h6} {
-  font-family: $font-family;
-  // font-weight: 200;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}  
-
-h1,
-.alpha {
-  @include responsive-text-size('mega');
-  @include type-weight('semi');
-  font-family: $sans-font-family-semibold;
-  color: $header-color;
-}
-
-h2,
-.beta {
-  @include responsive-text-size('kilo');
-  @include type-weight('semi');
-  color: $header-color;
-}
-
-h3,
-.gamma {
-  @include responsive-text-size('hecto');
-  @include type-weight('bold');
-  text-transform: uppercase;
-  letter-spacing: .35rem;
-}
-
-h4,
-.delta {
-  @include responsive-text-size('deca');
-  @include type-weight('light');
-}
-
-h5,
-.epsilon {
-  @include responsive-text-size('base');
-  @include type-weight('light');
-}
-
-h6,
-.zeta {
-  @include responsive-text-size('deci');
-}
-
-p {
-  @include responsive-text-size('deca');
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.omega {
-  @include responsive-text-size('centi');
-}
-
-ul, ol, dl {
-  margin: 0;
-  padding: 0;
-
-  li {
-    margin: 0;
-    padding: 0;  
-  }
-}
-
-ul, ul li ul {
-  list-style: none;
-  margin: 0;
-}
-
-dl dt, dl dd {
-  margin: 0;
-}
-
-code {
-  font-family: $serif-font-family;
-}
-
-.serif {
-  font-family: $serif-font-family;
-}
-
-.t-spaced {
-  font-family: $sans-font-family;
-  text-transform: uppercase;
-  letter-spacing: .35rem;
-}
-
-.t-caps {
-  font-family: $sans-font-family;
-  text-transform: uppercase;
-  letter-spacing: .125rem;
 }
