@@ -1,0 +1,103 @@
+// Typography
+//
+// Various typography weights and styles.
+//
+// .alpha  - Alpha heading, default appearance for <code>h1</code> tags
+// .beta   - Beta heading, default appearance for <code>h2</code> tags
+// .gamma  - Gamma heading, default appearance for <code>h3</code> tags
+// .delta  - Delta heading, default appearance for <code>h4</code> tags
+// .epsilon - Epsilon heading, default appearance for <code>h5</code> tags
+// .zeta - Zeta heading, default appearance for <code>h6</code> tags
+//
+// Markup: <h2 class="{{modifier_class}}">Heading</h2>
+//
+
+body {
+ font-family: $font-family; 
+}
+
+#{h1, h2, h3, h4, h5, h6} {
+  font-family: $font-family;
+  // font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}  
+
+h1,
+.alpha {
+  @include responsive-text-size('mega');
+  @include type-weight('semi');
+  font-family: $sans-font-family-semibold;
+  color: $header-color;
+}
+
+h2,
+.beta {
+  @include responsive-text-size('kilo');
+  @include type-weight('semi');
+  color: $header-color;
+}
+
+h3,
+.gamma {
+  @include responsive-text-size('hecto');
+  @include type-weight('bold');
+  text-transform: uppercase;
+  letter-spacing: .35rem;
+}
+
+h4,
+.delta {
+  @include responsive-text-size('deca');
+  @include type-weight('light');
+}
+
+h5,
+.epsilon {
+  @include responsive-text-size('base');
+  @include type-weight('light');
+}
+
+h6,
+.zeta {
+  @include responsive-text-size('deci');
+}
+
+.omega {
+  @include responsive-text-size('centi');
+}
+
+p {
+  @include responsive-text-size('deca');
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;  
+  }
+}
+
+ul, ul li ul {
+  list-style: none;
+  margin: 0;
+}
+
+dl dt, dl dd {
+  margin: 0;
+}
+
+code {
+  font-family: $serif-font-family;
+}
+
